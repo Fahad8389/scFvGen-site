@@ -78,7 +78,7 @@ export default function Home() {
                 See the 19 designs
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition" />
               </a>
-              <a href="https://github.com/" className="rounded-full border border-white/10 px-6 py-4 hover:bg-white/5 transition inline-flex items-center gap-2">
+              <a href="https://github.com/Fahad8389/scFvGen" target="_blank" rel="noopener" className="rounded-full border border-white/10 px-6 py-4 hover:bg-white/5 transition inline-flex items-center gap-2">
                 <Github className="w-4 h-4" /> GitHub
               </a>
             </div>
@@ -323,11 +323,8 @@ export default function Home() {
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">
-            <a href="https://github.com/" className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
+            <a href="https://github.com/Fahad8389/scFvGen" target="_blank" rel="noopener" className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
               <Github className="w-4 h-4" /> Pipeline repo
-            </a>
-            <a href={fig("/figures/table1_binding.png")} className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
-              <Beaker className="w-4 h-4" /> Poster figures
             </a>
           </div>
         </div>
