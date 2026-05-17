@@ -24,6 +24,11 @@ const ACCENT = "#7AA0A0"; // teal, matches poster theme
 const ACCENT_SOFT = "#A8C2C2";
 const CORAL = "#FF6B6B";
 
+// basePath fix: next/image with unoptimized=true does not auto-prepend basePath
+// during static export, so we do it manually for every figure src.
+const BASE = process.env.NODE_ENV === "production" ? "/scFvGen-site" : "";
+const fig = (p: string) => `${BASE}${p}`;
+
 export default function Home() {
   return (
     <main className="bg-[#05070A] text-[#F5F1EA] overflow-x-hidden">
@@ -83,7 +88,7 @@ export default function Home() {
             <Tilt tiltMaxAngleX={3} tiltMaxAngleY={3} perspective={1500} glareEnable glareMaxOpacity={0.08}>
               <div className="relative rounded-[2rem] overflow-hidden border border-white/10 bg-white/[0.03] shadow-[0_40px_120px_rgba(0,0,0,0.55)]">
                 <Image
-                  src="/figures/fmc63_scFv_cdrs.png"
+                  src={fig("/figures/fmc63_scFv_cdrs.png")}
                   alt="FMC63 scFv with six colored CDRs"
                   width={1600}
                   height={1200}
@@ -152,8 +157,8 @@ export default function Home() {
 
           <FeatureFigure
             title="Why we kept the FMC63 framework"
-            description="Every approved CAR-T drug (Kymriah, Yescarta, Tecartus, Breyanzi) ships FMC63. It has the lowest documented tonic signalling of any clinical scFv and no recorded FDA failure due to aggregation. Replacing the framework adds a risk we have no model for, so we redesigned only the six CDRs and left FR1 through FR4 alone."
-            image="/figures/fmc63_scFv_cdrs.png"
+            description="Every approved CAR-T drug (Kymriah, Yescarta, Tecartus, Breyanzi) ships FMC63. It has the lowest documented tonic signalling of any clinical scFv and no recorded FDA failure due to aggregation. Replacing the framework adds a risk we have no model for, so we redesigned only the six CDRs and kept all four framework regions (FR1, FR2, FR3, FR4) on both VL and VH frozen at the wild-type FMC63 sequence."
+            image={fig("/figures/fmc63_scFv_cdrs.png")}
           />
 
           <div className="grid lg:grid-cols-[0.58fr_0.42fr] gap-12 items-start">
@@ -321,7 +326,7 @@ export default function Home() {
             <a href="https://github.com/" className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
               <Github className="w-4 h-4" /> Pipeline repo
             </a>
-            <a href="/figures/table1_binding.png" className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
+            <a href={fig("/figures/table1_binding.png")} className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
               <Beaker className="w-4 h-4" /> Poster figures
             </a>
           </div>
