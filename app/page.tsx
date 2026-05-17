@@ -282,7 +282,7 @@ export default function Home() {
             <LimitCard
               icon={<Wrench className="w-6 h-6" />}
               title="scFv tool desert"
-              text="VHH design has NanoMelt for Tm, AbNatiV2 for nativeness, CamSol for solubility. Paired Fab design has AbLang2, p-AbNatiV2, and the Sormanni FabTm head. scFv inherits almost none of these because the linker disrupts the assumptions each model makes about chain pairing. We trained our own FabTm v0.1 (IgBert + Ridge) to plug one of the holes." />
+              text="VHH design has NanoMelt for Tm and AbNatiV2 for nativeness. Paired Fab design has AbLang2, p-AbNatiV2, and the Sormanni FabTm head. scFv inherits almost none of these because the linker disrupts the assumptions each model makes about chain pairing. We trained our own FabTm v0.1 (IgBert + Ridge) to plug one of the holes." />
           </div>
         </div>
       </section>
