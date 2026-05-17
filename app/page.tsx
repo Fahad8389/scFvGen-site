@@ -157,7 +157,7 @@ export default function Home() {
 
           <FeatureFigure
             title="Why we kept the FMC63 framework"
-            description="Every approved CAR-T drug (Kymriah, Yescarta, Tecartus, Breyanzi) ships FMC63. It has the lowest documented tonic signalling of any clinical scFv and no recorded FDA failure due to aggregation. Replacing the framework adds a risk we have no model for, so we redesigned only the six CDRs and kept all four framework regions (FR1, FR2, FR3, FR4) on both VL and VH frozen at the wild-type FMC63 sequence."
+            description="Every approved CAR-T drug (Kymriah, Yescarta, Tecartus, Breyanzi) ships FMC63. It has the lowest documented tonic signalling of any clinical scFv and no recorded FDA failure due to aggregation. Replacing the framework adds a risk we have no model for, so we redesigned only the six CDRs and kept the framework frozen at the wild-type FMC63 sequence."
             image={fig("/figures/fmc63_scFv_cdrs.png")}
           />
 
