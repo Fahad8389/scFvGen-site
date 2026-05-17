@@ -1,0 +1,102 @@
+{
+  "scFv_CD19_L10_d00_smoke": {
+    "fabtm_predicted_C": 64.4,
+    "esmc_pll_total": -406.6,
+    "esmc_pll_per_residue": -1.6942
+  },
+  "scFv_CD19_L10_d00": {
+    "fabtm_predicted_C": 61.1,
+    "esmc_pll_total": -406.47,
+    "esmc_pll_per_residue": -1.6936
+  },
+  "scFv_CD19_L10_d01": {
+    "fabtm_predicted_C": 64.5,
+    "esmc_pll_total": -411.62,
+    "esmc_pll_per_residue": -1.7151
+  },
+  "scFv_CD19_L10_d02": {
+    "fabtm_predicted_C": 63.8,
+    "esmc_pll_total": -400.08,
+    "esmc_pll_per_residue": -1.667
+  },
+  "scFv_CD19_L10_d03": {
+    "fabtm_predicted_C": 64.8,
+    "esmc_pll_total": -408.66,
+    "esmc_pll_per_residue": -1.7027
+  },
+  "scFv_CD19_L12_d00": {
+    "fabtm_predicted_C": 61.4,
+    "esmc_pll_total": -417.43,
+    "esmc_pll_per_residue": -1.7249
+  },
+  "scFv_CD19_L12_d01": {
+    "fabtm_predicted_C": 62.2,
+    "esmc_pll_total": -427.57,
+    "esmc_pll_per_residue": -1.7668
+  },
+  "scFv_CD19_L12_d02": {
+    "fabtm_predicted_C": 59.9,
+    "esmc_pll_total": -408.59,
+    "esmc_pll_per_residue": -1.6884
+  },
+  "scFv_CD19_L12_d03": {
+    "fabtm_predicted_C": 62.0,
+    "esmc_pll_total": -430.79,
+    "esmc_pll_per_residue": -1.7801
+  },
+  "scFv_CD19_L14_d00": {
+    "fabtm_predicted_C": 61.9,
+    "esmc_pll_total": -426.6,
+    "esmc_pll_per_residue": -1.7484
+  },
+  "scFv_CD19_L14_d01": {
+    "fabtm_predicted_C": 58.5,
+    "esmc_pll_total": -421.16,
+    "esmc_pll_per_residue": -1.7261
+  },
+  "scFv_CD19_L14_d02": {
+    "fabtm_predicted_C": 65.6,
+    "esmc_pll_total": -416.65,
+    "esmc_pll_per_residue": -1.7076
+  },
+  "scFv_CD19_L14_d03": {
+    "fabtm_predicted_C": 62.2,
+    "esmc_pll_total": -423.16,
+    "esmc_pll_per_residue": -1.7343
+  },
+  "scFv_CD19_L14_d04": {
+    "fabtm_predicted_C": 61.3,
+    "esmc_pll_total": -422.18,
+    "esmc_pll_per_residue": -1.7302
+  },
+  "scFv_CD19_L16_d00": {
+    "fabtm_predicted_C": 64.4,
+    "esmc_pll_total": -422.92,
+    "esmc_pll_per_residue": -1.7192
+  },
+  "scFv_CD19_L16_d01": {
+    "fabtm_predicted_C": 59.1,
+    "esmc_pll_total": -424.72,
+    "esmc_pll_per_residue": -1.7265
+  },
+  "scFv_CD19_L16_d02": {
+    "fabtm_predicted_C": 61.6,
+    "esmc_pll_total": -410.69,
+    "esmc_pll_per_residue": -1.6695
+  },
+  "scFv_CD19_L16_d03": {
+    "fabtm_predicted_C": 64.6,
+    "esmc_pll_total": -418.69,
+    "esmc_pll_per_residue": -1.702
+  },
+  "scFv_CD19_L16_d04": {
+    "fabtm_predicted_C": 61.8,
+    "esmc_pll_total": -424.67,
+    "esmc_pll_per_residue": -1.7263
+  },
+  "FMC63_baseline": {
+    "fabtm_predicted_C": 62.3,
+    "esmc_pll_total": -337.4,
+    "esmc_pll_per_residue": -1.3942
+  }
+}

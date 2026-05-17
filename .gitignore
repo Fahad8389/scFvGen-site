@@ -1,0 +1,18 @@
+# deps
+node_modules/
+.pnp
+.pnp.js
+
+# next
+.next/
+out/
+*.tsbuildinfo
+next-env.d.ts
+
+# misc
+.DS_Store
+*.log
+.env*
+.vercel
+.idea/
+.vscode/
