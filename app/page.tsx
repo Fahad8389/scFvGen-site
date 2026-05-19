@@ -250,7 +250,10 @@ export default function Home() {
           <p className="mt-6 text-sm text-[#9E9387] italic">
             Columns shown: design ID, CDR-H3 length, Protenix v2 iPTM against each of the four
             B-cell antigens, pLDDT, selectivity margin (CD19 iPTM minus mean off-target iPTM),
-            predicted Tm from scFvGen FabTm v0.1. AF3 and Fab columns omitted on this page,
+            and three predicted Tm columns from scFvGen FabTm v0.1: Tm scFv (input = VL + (GGGGS)×3 + VH),
+            Tm no-linker (input = VL + VH directly), and Tm Fab (input = VL + CL_kappa + linker + VH + CH1,
+            i.e. a scFab format that adds the natural constant regions). The Tm-Fab condition is closer to
+            the predictor's training distribution; Tm-scFv is the conservative lower bound. AF3 columns omitted,
             available in the supervisor report.
           </p>
 
@@ -455,7 +458,9 @@ function DesignTable() {
             <th className="text-right px-3 py-4 font-semibold">CD79a</th>
             <th className="text-right px-3 py-4 font-semibold">pLDDT</th>
             <th className="text-right px-3 py-4 font-semibold">Sel margin</th>
-            <th className="text-right px-5 py-4 font-semibold">Tm (°C)</th>
+            <th className="text-right px-3 py-4 font-semibold" title="scFv format: VL + (GGGGS)x3 + VH (current)">Tm scFv (°C)</th>
+            <th className="text-right px-3 py-4 font-semibold" title="Linker stripped: VL + VH directly">Tm no-linker (°C)</th>
+            <th className="text-right px-5 py-4 font-semibold" title="Fab format: VL + CL_kappa + linker + VH + CH1">Tm Fab (°C)</th>
           </tr>
         </thead>
         <tbody>
@@ -485,8 +490,14 @@ function DesignTable() {
                 <td className={"px-3 py-3 text-right font-mono " + (r.sel != null && r.sel > 0 ? "text-[#A8C2C2]" : "text-[#FF6B6B]")}>
                   {r.sel == null ? "—" : (r.sel > 0 ? "+" : "") + r.sel.toFixed(3)}
                 </td>
-                <td className={"px-5 py-3 text-right font-mono " + (passTm ? "text-[#A8C2C2]" : "text-[#FF6B6B]")}>
+                <td className={"px-3 py-3 text-right font-mono " + (passTm ? "text-[#A8C2C2]" : "text-[#FF6B6B]")}>
                   {fmt(r.tm, 1)}
+                </td>
+                <td className={"px-3 py-3 text-right font-mono " + (r.tm_no_link != null && r.tm_no_link >= 60 ? "text-[#A8C2C2]" : "text-[#FF6B6B]")}>
+                  {fmt(r.tm_no_link, 1)}
+                </td>
+                <td className={"px-5 py-3 text-right font-mono " + (r.tm_fab != null && r.tm_fab >= 60 ? "text-[#A8C2C2]" : "text-[#FF6B6B]")}>
+                  {fmt(r.tm_fab, 1)}
                 </td>
               </tr>
             );
