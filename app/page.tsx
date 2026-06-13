@@ -325,6 +325,16 @@ export default function Home() {
             source. Supervisor-approved May 2026.
           </p>
 
+          <div className="mt-8 border-l-2 border-[#7AA0A0] pl-5 max-w-2xl">
+            <p className="uppercase tracking-[0.25em] text-xs text-[#7AA0A0] mb-2">Authors</p>
+            <p className="text-[#F5F1EA] text-lg">
+              Fahad Alotaibi  ·  Sultan Aldawsri
+            </p>
+            <p className="mt-2 text-[#9E9387] text-sm">
+              Supervised by Dr. Ali Altharawi
+            </p>
+          </div>
+
           <div className="mt-10 flex flex-wrap gap-4">
             <a href="https://github.com/Fahad8389/scFvGen" target="_blank" rel="noopener" className="rounded-full border border-white/10 px-6 py-3 hover:bg-white/5 transition inline-flex items-center gap-2">
               <Github className="w-4 h-4" /> Pipeline repo
